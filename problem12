@@ -3,7 +3,7 @@ Problem1.a
 
 
 Problem1.b
-I created an array with 20 elements so that it's not taking much time to compile, but of course you can change it to 1.000.000. As I said above in this example comparioson num woulb be one less = 19 and that is the number that is being written in the first line. If we sum up the number of all comparisons it will be 63
+I created an array with 20 elements so that it's not taking much time to compile, but of course you can change it to 1.000.000. As I said above in this example comparioson num woulb be one less = 19 and that is the number that is being written in the first line. If we sum up the number of all comparisons for this case it will be 63. SO P/Q is 63/Q.
 
  public class QuickSort 
 { 
