@@ -1,14 +1,18 @@
 Problem1.a
+  The number of comparison for the partition is always one less than the number of elements. So if we have an array with 10 elements => 9 comparisons would be done. In this case if we have k times of each number => comparison number would be 3k-1. For example if we have an array like this [5,5,2,2,8,8] where k=2 => num of comparisons = 3*k-1 = 3*2-1=5 which is exactly one less than the number of elements in the array.
 
 
 Problem1.b
-  public class QuickSort 
-{ 
+I created an array with 20 elements so that it's not taking much time to compile, but of course you can change it to 1.000.000. As I said above in this example comparioson num woulb be one less = 19 and that is the number that is being written in the first line.
 
+ public class QuickSort 
+{ 
+    
 	int partition(int arr[], int low, int high) { 
 		int pivot = arr[high]; 
 		int i = (low-1); 
 		int count = 0;
+		
 		for (int j=low; j<high; j++) 
 		{ 
 			if (arr[j] <= pivot) 
@@ -21,9 +25,11 @@ Problem1.b
 				
 			}
 	        
-         System.out.print(++count + " ");
+            count += 1;
+         
 		}
-
+		
+        System.out.println("Number of comperisons " + count);
 
 		int temp = arr[i+1]; 
 		arr[i+1] = arr[high]; 
@@ -71,8 +77,9 @@ Problem1.b
     }
 }
 
-	Problem 2.a
-  
+  Problem 2.a
+In this case instead of choosing the pivot to be the first or the last element, we randomly choose it and do the partition, but it doesn't change the fact that anyway all the elements should be compared with the pivot element either it is in the center or the left part. Although in this case the running time is faster, the number of comparisons is still one less than the number of overall elements, so I think it will be again 3k-1. 
+
   Problem 2.b
   import java.util.Random;
  
