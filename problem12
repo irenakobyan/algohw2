@@ -1,9 +1,9 @@
 Problem1.a
-  The number of comparison for the partition is always one less than the number of elements. So if we have an array with 10 elements => 9 comparisons would be done. In this case if we have k times of each number => comparison number would be 3k-1. For example if we have an array like this [5,5,2,2,8,8] where k=2 => num of comparisons = 3*k-1 = 3*2-1=5 which is exactly one less than the number of elements in the array.
+  The number of comparison for the partition is always one less than the number of elements. So if we have an array with 10 elements => 9 comparisons would be done. In this case if we have k times of each number => comparison number would be 3k-1. For example if we have an array like this [5,5,2,2,8,8] where k=2 => num of comparisons = 3*k-1 = 3*2-1=5 which is exactly one less than the number of elements in the array. Overall number is (5*k^2-k)/2.
 
 
 Problem1.b
-I created an array with 20 elements so that it's not taking much time to compile, but of course you can change it to 1.000.000. As I said above in this example comparioson num woulb be one less = 19 and that is the number that is being written in the first line.
+I created an array with 20 elements so that it's not taking much time to compile, but of course you can change it to 1.000.000. As I said above in this example comparioson num woulb be one less = 19 and that is the number that is being written in the first line. If we sum up the number of all comparisons it will be 63
 
  public class QuickSort 
 { 
